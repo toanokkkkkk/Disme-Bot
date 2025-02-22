@@ -14,9 +14,9 @@
     "PASSWORD": "",
     "OTPKEY": "",
     "BOTNAME": "Bot Messenger",
-    "PREFIX": "?",
+    "PREFIX": "/",
     "ADMINBOT": [
-        "100004253741257"
+        "100067591325273"
     ],
     "APPSTATEPATH": "appstate.json",
     "SETUP_WIN": {

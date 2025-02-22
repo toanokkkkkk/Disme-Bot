@@ -1,1 +1,50 @@
-{}
+{
+    "100075460194325": {
+        "userID": "100075460194325",
+        "name": "Mạnh Toàn Hi",
+        "vanity": "100075460194325",
+        "gender": 2,
+        "isBirthday": false,
+        "money": 0,
+        "exp": 0,
+        "createTime": {
+            "timestamp": 1740160728159
+        },
+        "data": {
+            "timestamp": 1740160728159
+        },
+        "lastUpdate": 1740160728159
+    },
+    "100022935728017": {
+        "userID": "100022935728017",
+        "name": "𝑵𝒈𝒖𝒚𝒆̂̃𝒏 𝑴𝒂̣𝒏𝒉 𝑻𝒐𝒂̀𝒏",
+        "vanity": "nguyenmanhtoan.use",
+        "gender": 2,
+        "isBirthday": false,
+        "money": 0,
+        "exp": 0,
+        "createTime": {
+            "timestamp": 1740160728455
+        },
+        "data": {
+            "timestamp": 1740160728455
+        },
+        "lastUpdate": 1740160728455
+    },
+    "100067591325273": {
+        "userID": "100067591325273",
+        "name": "Nguyễn Mạnh Toàn",
+        "vanity": "nguyenmanhtoan.user",
+        "gender": 2,
+        "isBirthday": false,
+        "money": 0,
+        "exp": 0,
+        "createTime": {
+            "timestamp": 1740160728730
+        },
+        "data": {
+            "timestamp": 1740160728730
+        },
+        "lastUpdate": 1740160728730
+    }
+}

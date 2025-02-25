@@ -3,7 +3,7 @@ const { join, resolve } = require('path')
 const { execSync } = require('child_process');
 const config = require("./config.json");
 const chalk = require("chalk");
-const login = require('./includes/fca-disme');
+const login = require('./ws3-fca-main/index.js');
 const listPackage = JSON.parse(readFileSync('./package.json')).dependencies;
 const fs = require("fs");
 const moment = require("moment-timezone");
@@ -57,9 +57,9 @@ global.data = new Object({
     allThreadID: new Array()
 });
 
-global.utils = require("./utils");
+global.utils = require("./utils/index.js");
 
-global.loading = require("./utils/log");
+global.loading = require("./utils/log.js");
 
 global.nodemodule = new Object();
 
@@ -279,8 +279,8 @@ function onBot() {
         console.log(chalk.blue(`============== BOT START ==============`));
         global.loading(`${chalk.hex('#ff7100')(`[ SUCCESS ]`)} Loaded ${global.client.commands.size} commands and ${global.client.events.size} events successfully`, "LOADED");
         global.loading(`${chalk.hex('#ff7100')(`[ TIMESTART ]`)} Launch time: ${((Date.now() - global.client.timeStart) / 1000).toFixed()}s`, "LOADED");
-        const listener = require('./includes/listen')({ api: loginApiData });
-        global.custom = require('./custom')({ api: loginApiData });
+        const listener = require('./includes/listen.js')({ api: loginApiData });
+        global.custom = require('./custom.js')({ api: loginApiData });
         global.handleListen = loginApiData.listenMqtt(async (error, message) => {
             if (error) {
                 if (error.error === 'Not logged in.') {
